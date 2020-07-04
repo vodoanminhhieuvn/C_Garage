@@ -1,0 +1,19 @@
+
+{% extends "garage/base.html"%}
+{% block content%}
+    {% for car in my_list %}
+    <article class="media content-section">
+        <div class="media-body">
+          <div class="article-metadata">
+            <a class="mr-2" href="#">{{ car.staff }}</a>
+            <small class="text-muted">{{ car.date_received|date:"j/n/Y" }}</small>
+          </div>
+          
+            <h2><a class="article-title" href="#">{{ car.owner }}</a></h2>
+            <p class="article-content">{{ car.car_code.car_name }}</p>
+          
+        </div>
+      </article>
+    {% endfor%}
+{% endblock content %}
+
