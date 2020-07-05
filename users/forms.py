@@ -13,10 +13,12 @@ class UserRegisterForm(UserCreationForm):
 
 # Where we create 2 different forms and save it at the site
 
-class UserUpdateForm(forms.ModelForm):    
+class UserUpdateForm(forms.ModelForm):
+    email = forms.EmailField()
+    
     class Meta:
         model = User
-        fields = ['password1', 'password2', 'email']
+        fields = ['email']
 
 class ProfileUpdateForm(forms.ModelForm):
     class Meta:
