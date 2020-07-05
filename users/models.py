@@ -8,7 +8,6 @@ class UserProfileAdditional(models.Model):
    phone_number = models.CharField(max_length=10, validators=[RegexValidator(r'^\d{1,10}$')])
    image = models.ImageField(default='default.jpg', upload_to='profile_pics')
    
-
    def __str__(self):
     return f'{self.user.username}'
 

@@ -12,5 +12,17 @@
         </div>
         </div>
         <!-- FORM HERE -->
+        <form method="POST">
+            {% csrf_token %}
+            <fieldset class="form-group">
+                {{ u_form|crispy }}
+                {{ p_form|crispy }}
+            </fieldset>
+            <div class="form-group">
+                <button class="btn btn-outline-info" type="submit">
+                    Save
+                </button>
+            </div>
+        </form>
     </div>
 {% endblock content %}
