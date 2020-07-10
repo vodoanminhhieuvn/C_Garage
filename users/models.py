@@ -10,8 +10,8 @@ class UserProfileAdditional(models.Model):
    image = models.ImageField(default='default.jpg', upload_to='profile_pics')
 
 #This will overide the image file not creating new files in models
-   def save(self):
-        super().save()
+   def save(self, *args, **kwargs):
+        super().save(*args, **kwargs)
 
         img = Image.open(self.image.path)
 

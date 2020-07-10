@@ -1,0 +1,17 @@
+
+{% extends "garage/base.html"%}
+{% block content%}
+<article class="media content-section">
+    <div class="media-body">
+        <div class="article-metadata">
+        <a class="mr-2" href="#">{{ object.staff }}</a>
+        <small class="text-muted">{{ object.date_received|date:"j/n/Y" }}</small>
+        </div>
+        
+        <h2 class="article-title">{{ object.owner }}</h2>
+        <p class="article-content">{{ object.car_code.car_name }}</p>
+        
+    </div>
+    </article>
+{% endblock content %}
+

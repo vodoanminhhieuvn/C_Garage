@@ -1,6 +1,6 @@
 
 {% extends "garage/base.html"%}
-{% block content%}
+{% block content %}
     {% for car in my_list %}
     <article class="media content-section">
         <div class="media-body">
@@ -9,7 +9,7 @@
             <small class="text-muted">{{ car.date_received|date:"j/n/Y" }}</small>
           </div>
           
-            <h2><a class="article-title" href="#">{{ car.owner }}</a></h2>
+            <h2><a class="article-title" href="{% url 'car-detail' car.car_id %}">{{ car.owner }}</a></h2>
             <p class="article-content">{{ car.car_code.car_name }}</p>
           
         </div>

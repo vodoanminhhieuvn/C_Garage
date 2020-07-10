@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'datetimepicker',
     'django.contrib.auth',
     'users.apps.UsersConfig',
     'garage.apps.GarageConfig',
@@ -41,6 +42,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'bootstrap4',
+    'bootstrap_datepicker_plus',
+    "django_readonly_field"
 ]
 
 MIDDLEWARE = [
@@ -131,3 +135,7 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 LOGIN_REDIRECT_URL = 'garage-home'
 
 LOGIN_URL = 'login'
+
+BOOTSTRAP4 = {
+    'include_jquery': True,
+}

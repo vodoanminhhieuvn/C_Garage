@@ -12,7 +12,6 @@ class UserRegisterForm(UserCreationForm):
         fields = ['username', 'first_name', 'last_name', 'email','password1', 'password2','is_staff']
 
 # Where we create 2 different forms and save it at the site
-
 class UserUpdateForm(forms.ModelForm):
     email = forms.EmailField()
     

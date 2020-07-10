@@ -5,4 +5,3 @@ from django.contrib.auth.models import Group
 
 admin.site.register(UserProfileAdditional)
 admin.site.unregister(Group)
-admin.site.disable_action('delete_selected')

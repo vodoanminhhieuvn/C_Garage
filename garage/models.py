@@ -1,4 +1,5 @@
 from django.db import models
+from django.urls import reverse
 from django.utils import timezone
 from django.contrib.auth.models import User
 from django.core.validators import RegexValidator
@@ -19,8 +20,18 @@ class Car(models.Model):
     email = models.EmailField()
     date_received = models.DateTimeField(default=timezone.now)
     staff = models.ForeignKey(User, on_delete=models.CASCADE)
-    car_code = models.ForeignKey('Car_brand', on_delete=models.CASCADE)
-    is_edited = models.BooleanField()
+    car_brand = models.ForeignKey('Car_brand', on_delete=models.CASCADE)
+    is_edited = models.BooleanField(null=True)
+
+    def save(self, *args, **kwargs):
+        super().save(*args, **kwargs)
+        if self.pk:
+            Car.objects.filter(pk=self.car_id).update(car_id = self.car_id + '-' + self.car_brand.car_code)
+
     def __str__(self):
         return self.owner
+    
+    
+    def get_absolute_url(self):
+        return reverse('car-detail', kwargs={'pk': self.pk})
 
