@@ -1,8 +1,8 @@
 from django import forms
 from django.shortcuts import render, redirect
-from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from .models import Car, Car_Brand
-from django.views.generic import ListView, DetailView, CreateView
+from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 
 
 def home(request):
@@ -29,6 +29,29 @@ class CarCreateView(LoginRequiredMixin, CreateView):
     def form_valid(self, form):
         form.instance.staff = self.request.user
         return super().form_valid(form)
+
+class CarUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
+    model = Car
+    fields = ['owner', 'address', 'license_plate', 'phone_number', 'email', 'car_brand']
+    def form_valid(self, form):
+        form.instance.staff = self.request.user
+        return super().form_valid(form)
+
+    def test_func(self):
+        Car = self.get_object()
+        if self.request.user.is_superuser:
+            return True
+        return False
+
+class CarDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
+    model = Car
+    success_url = '/'
+    
+    def test_func(self):
+        Car = self.get_object()
+        if self.request.user.is_superuser:
+            return True
+        return False
 
 def about(request):
     return render(request, 'garage/about.html')
