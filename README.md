@@ -1,4 +1,3 @@
 #C_Garage
-# Foobar
+C_Garage is a website build in Django to help manager can easily manage their car instead of writing stuff on paper
 
-Foobar is a Python library for dealing with word pluralization.
