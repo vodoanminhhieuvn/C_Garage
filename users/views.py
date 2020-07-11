@@ -21,7 +21,7 @@ def register(request):
 @login_required
 def profile(request):
     if request.method == 'POST':
-        u_form = UserUpdateForm(request.POST, instance=request.user)
+        ru_form = UserUpdateForm(request.POST, instance=request.user)
         p_form = ProfileUpdateForm(request.POST, 
                                     request.FILES, 
                                         instance=request.user.userprofileadditional)  #UserProfileAdditional
