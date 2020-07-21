@@ -7,14 +7,9 @@ Please note we have a code of conduct, please follow it in all your interactions
 
 ## Code of Conduct
 
-### Our Pledge
+### Our Decision
 
-In the interest of fostering an open and welcoming environment, we as
-contributors and maintainers pledge to making participation in our project and
-our community a harassment-free experience for everyone, regardless of age, body
-size, disability, ethnicity, gender identity and expression, level of experience,
-nationality, personal appearance, race, religion, or sexual identity and
-orientation.
+We want to make this project to help people manage their garage more easily,
 
 ### Our Standards
 
@@ -38,8 +33,10 @@ advances
 * Other conduct which could reasonably be considered inappropriate in a
   professional setting
 
-### Future Plan
+### Reminding
 
-This project is just for study purpose, so please don't take it too seriously
+This project is just for study purpose, so please don't take it too seriously.
+
+We try to take this project become better and better so thank you for your helping
 
 
