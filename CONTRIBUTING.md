@@ -9,7 +9,7 @@ Please note we have a code of conduct, please follow it in all your interactions
 
 ### Our Decision
 
-We want to make this project to help people manage their garage more easily,
+We want to make this project to help people manage their garage more easily, effectively that everyone can use 
 
 ### Our Standards
 
@@ -19,19 +19,9 @@ include:
 * Using welcoming and inclusive language
 * Being respectful of differing viewpoints and experiences
 * Gracefully accepting constructive criticism
-* Focusing on what is best for the community
-* Showing empathy towards other community members
-
-Examples of unacceptable behavior by participants include:
-
-* The use of sexualized language or imagery and unwelcome sexual attention or
-advances
-* Trolling, Push without permission, Change Readme file without me notice
-* Public or private harassment
-* Publishing others' private information, such as a physical or electronic
-  address, without explicit permission
-* Other conduct which could reasonably be considered inappropriate in a
-  professional setting
+* Follow how we naming such as Object, Class, Method, etc to maintain development and performance
+* Don't be shy to upload Issue if you are stuck or your code are getting bug
+* We appreciate who can find our issue (Security, Bug, Etc)
 
 ### Reminding
 
