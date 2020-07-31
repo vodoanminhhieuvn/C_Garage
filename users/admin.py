@@ -5,3 +5,5 @@ from django.contrib.auth.models import Group
 
 admin.site.register(UserProfileAdditional)
 admin.site.unregister(Group)
+
+

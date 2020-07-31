@@ -3,11 +3,13 @@ from django.urls import reverse
 from django.utils import timezone
 from django.contrib.auth.models import User
 from django.core.validators import RegexValidator
+from simple_history.models import HistoricalRecords
 # Create your models here.
 
 class Car_Brand(models.Model):
     car_code = models.CharField(primary_key=True, max_length=100)
     car_name = models.CharField(max_length=200)
+    history = HistoricalRecords(inherit=True)
     def __str__(self):
         return self.car_name
 
@@ -22,6 +24,7 @@ class Car(models.Model):
     staff = models.ForeignKey(User, on_delete=models.CASCADE)
     car_brand = models.ForeignKey('Car_brand', on_delete=models.CASCADE)
     is_edited = models.BooleanField(null=True)
+    history = HistoricalRecords(inherit=True)
 
     def save(self, *args, **kwargs):
         super().save(*args, **kwargs)
@@ -30,7 +33,6 @@ class Car(models.Model):
 
     def __str__(self):
         return self.owner
-    
     
     def get_absolute_url(self):
         return reverse('car-detail', kwargs={'pk': self.pk})
