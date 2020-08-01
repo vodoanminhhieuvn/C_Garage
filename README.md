@@ -20,6 +20,8 @@ pip3 install -r requirements.txt
 - [x] Create Log-in System
 - [x] Create Models Car
 - [x] Create Managing Car
+- [x] Support Mobile Web
+- [ ] Fix Model Car Status
 - [ ] Update HTMl
 - [ ] Create HistoricalRecord
 - [ ] Create Pagination

@@ -1,6 +1,11 @@
 
 {% extends "garage/base.html"%}
 {% block content %}
+
+    <div class="mb-2 clearfix">
+      <a href="{% url 'car-create' %}" class="btn btn-success float-right">New Car</a>
+    </div>
+
     {% for car in my_list %}
     <article class="media content-section">
         <div class="media-body">
@@ -8,10 +13,28 @@
             <a class="mr-2" href="#">{{ car.staff }}</a>
             <small class="text-muted">{{ car.date_received|date:"j/n/Y" }}</small>
           </div>
+
+          <div class="container">
+            <div class="row">
+
+              <div class="col-sm">
+                <h2><a class="article-title" href="{% url 'car-detail' car.car_id %}">{{ car.owner }}</a></h2>
+                <p class="article-content">{{ car.car_brand.car_name }}</p>
+              </div>
+    
+              <div class="col-sm">
+                <ul>
+                  <li>{{ car.owner }}</li>
+                  <li>{{ car.phone_number }}</li>
+                  <li>{{ car.status}}</li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
           
-            <h2><a class="article-title" href="{% url 'car-detail' car.car_id %}">{{ car.owner }}</a></h2>
-            <p class="article-content">{{ car.car_code.car_name }}</p>
           
+            
         </div>
       </article>
     {% endfor%}
