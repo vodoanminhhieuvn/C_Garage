@@ -1,11 +1,7 @@
 
 {% extends "garage/base.html"%}
 {% block content %}
-
-    <div class="mb-2 clearfix">
-      <a href="{% url 'car-create' %}" class="btn btn-success float-right">New Car</a>
-    </div>
-
+    <h1 class="mb-3">Car's created by {{ view.kwargs.username }} ({{ page_obj.paginator.count }})</h1>
     {% for car in my_list %}
     <article class="media content-section">
         <div class="media-body">
@@ -18,20 +14,16 @@
             <div class="row">
 
               <div class="col-sm">
-                <h2 class="article-title">{{ car.car_brand.car_name }}</h2>
-                <h5 class="article-title">{{ car.fee }}</h5>
+                <h2><a class="article-title" href="{% url 'car-detail' car.car_id %}">{{ car.owner }}</a></h2>
+                <p class="article-content">{{ car.car_brand.car_name }}</p>
               </div>
     
               <div class="col-sm">
                 <ul>
-                  <li>Owner: {{ car.owner }}</li>
-                  <li>Phone: {{ car.phone_number }}</li>
-                  <li>license_plate: {{ car.license_plate}}</li>
+                  <li>{{ car.owner }}</li>
+                  <li>{{ car.phone_number }}</li>
+                  <li>{{ car.license_plate}}</li>
                 </ul>
-              </div>
-
-              <div class="col-sm mt-3">
-                <a class="article-title btn btn-info"  href="{% url 'car-detail' car.car_id %}" style="color:white">Detail</a>
               </div>
 
             </div>

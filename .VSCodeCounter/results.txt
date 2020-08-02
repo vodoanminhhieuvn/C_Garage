@@ -1,0 +1,133 @@
+Date : 2020-08-02 21:56:19
+Directory : /Users/vodoanminhhieuvn/iCloud Drive (Archive)/Desktop/C_Garage
+Total : 83 files,  1714 codes, 112 comments, 486 blanks, all 2312 lines
+
+Languages
++------------------+------------+------------+------------+------------+------------+
+| language         | files      | code       | comment    | blank      | total      |
++------------------+------------+------------+------------+------------+------------+
+| Python           |         63 |        850 |        102 |        354 |      1,306 |
+| HTML             |         13 |        388 |         10 |         72 |        470 |
+| Database         |          1 |        307 |          0 |          8 |        315 |
+| CSS              |          1 |         87 |          0 |         23 |        110 |
+| Markdown         |          2 |         40 |          0 |         22 |         62 |
+| YAML             |          1 |         26 |          0 |          5 |         31 |
+| pip requirements |          1 |         16 |          0 |          1 |         17 |
+| JavaScript       |          1 |          0 |          0 |          1 |          1 |
++------------------+------------+------------+------------+------------+------------+
+
+Directories
++-----------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                                        | files      | code       | comment    | blank      | total      |
++-----------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                                           |         83 |      1,714 |        112 |        486 |      2,312 |
+| .github                                                                                                                     |          1 |         26 |          0 |          5 |         31 |
+| .github/workflows                                                                                                           |          1 |         26 |          0 |          5 |         31 |
+| C_Garage                                                                                                                    |          6 |        111 |         41 |         55 |        207 |
+| C_Garage/templates                                                                                                          |          1 |          6 |          0 |          3 |          9 |
+| C_Garage/templates/admin                                                                                                    |          1 |          6 |          0 |          3 |          9 |
+| garage                                                                                                                      |         45 |        877 |         34 |        279 |      1,190 |
+| garage/migrations                                                                                                           |         28 |        425 |         27 |        164 |        616 |
+| garage/static                                                                                                               |          1 |         87 |          0 |         23 |        110 |
+| garage/static/garage                                                                                                        |          1 |         87 |          0 |         23 |        110 |
+| garage/templates                                                                                                            |          7 |        232 |          1 |         46 |        279 |
+| garage/templates/garage                                                                                                     |          7 |        232 |          1 |         46 |        279 |
+| garage_record                                                                                                               |          7 |          7 |          4 |         13 |         24 |
+| garage_record/migrations                                                                                                    |          1 |          0 |          0 |          1 |          1 |
+| users                                                                                                                       |         19 |        315 |         31 |         98 |        444 |
+| users/migrations                                                                                                            |          5 |         61 |          4 |         26 |         91 |
+| users/static                                                                                                                |          1 |          0 |          0 |          1 |          1 |
+| users/static/users                                                                                                          |          1 |          0 |          0 |          1 |          1 |
+| users/templates                                                                                                             |          5 |        150 |          9 |         23 |        182 |
+| users/templates/users                                                                                                       |          5 |        150 |          9 |         23 |        182 |
++-----------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-----------------------------------------------------------------------------------------------------------------------------+------------------+------------+------------+------------+------------+
+| filename                                                                                                                    | language         | code       | comment    | blank      | total      |
++-----------------------------------------------------------------------------------------------------------------------------+------------------+------------+------------+------------+------------+
+| /Users/vodoanminhhieuvn/iCloud Drive (Archive)/Desktop/C_Garage/.github/workflows/django.yml                                | YAML             |         26 |          0 |          5 |         31 |
+| /Users/vodoanminhhieuvn/iCloud Drive (Archive)/Desktop/C_Garage/CONTRIBUTING.md                                             | Markdown         |         19 |          0 |         14 |         33 |
+| /Users/vodoanminhhieuvn/iCloud Drive (Archive)/Desktop/C_Garage/C_Garage/__init__.py                                        | Python           |          0 |          0 |          1 |          1 |
+| /Users/vodoanminhhieuvn/iCloud Drive (Archive)/Desktop/C_Garage/C_Garage/asgi.py                                            | Python           |          4 |          8 |          5 |         17 |
+| /Users/vodoanminhhieuvn/iCloud Drive (Archive)/Desktop/C_Garage/C_Garage/settings.py                                        | Python           |         83 |         25 |         36 |        144 |
+| /Users/vodoanminhhieuvn/iCloud Drive (Archive)/Desktop/C_Garage/C_Garage/templates/admin/base_site.html                     | HTML             |          6 |          0 |          3 |          9 |
+| /Users/vodoanminhhieuvn/iCloud Drive (Archive)/Desktop/C_Garage/C_Garage/urls.py                                            | Python           |         14 |          0 |          5 |         19 |
+| /Users/vodoanminhhieuvn/iCloud Drive (Archive)/Desktop/C_Garage/C_Garage/wsgi.py                                            | Python           |          4 |          8 |          5 |         17 |
+| /Users/vodoanminhhieuvn/iCloud Drive (Archive)/Desktop/C_Garage/README.md                                                   | Markdown         |         21 |          0 |          8 |         29 |
+| /Users/vodoanminhhieuvn/iCloud Drive (Archive)/Desktop/C_Garage/db.sqlite3                                                  | Database         |        307 |          0 |          8 |        315 |
+| /Users/vodoanminhhieuvn/iCloud Drive (Archive)/Desktop/C_Garage/garage/__init__.py                                          | Python           |          0 |          0 |          1 |          1 |
+| /Users/vodoanminhhieuvn/iCloud Drive (Archive)/Desktop/C_Garage/garage/admin.py                                             | Python           |          7 |          2 |          4 |         13 |
+| /Users/vodoanminhhieuvn/iCloud Drive (Archive)/Desktop/C_Garage/garage/apps.py                                              | Python           |          3 |          0 |          4 |          7 |
+| /Users/vodoanminhhieuvn/iCloud Drive (Archive)/Desktop/C_Garage/garage/forms.py                                             | Python           |          7 |          0 |          1 |          8 |
+| /Users/vodoanminhhieuvn/iCloud Drive (Archive)/Desktop/C_Garage/garage/migrations/0001_initial.py                           | Python           |         32 |          1 |          7 |         40 |
+| /Users/vodoanminhhieuvn/iCloud Drive (Archive)/Desktop/C_Garage/garage/migrations/0002_auto_20200625_0806.py                | Python           |         12 |          1 |          6 |         19 |
+| /Users/vodoanminhhieuvn/iCloud Drive (Archive)/Desktop/C_Garage/garage/migrations/0003_auto_20200626_1200.py                | Python           |         12 |          1 |          6 |         19 |
+| /Users/vodoanminhhieuvn/iCloud Drive (Archive)/Desktop/C_Garage/garage/migrations/0004_car_is_edited.py                     | Python           |         13 |          1 |          6 |         20 |
+| /Users/vodoanminhhieuvn/iCloud Drive (Archive)/Desktop/C_Garage/garage/migrations/0005_auto_20200627_0628.py                | Python           |         13 |          1 |          6 |         20 |
+| /Users/vodoanminhhieuvn/iCloud Drive (Archive)/Desktop/C_Garage/garage/migrations/0006_auto_20200707_0948.py                | Python           |         12 |          1 |          6 |         19 |
+| /Users/vodoanminhhieuvn/iCloud Drive (Archive)/Desktop/C_Garage/garage/migrations/0007_auto_20200707_1044.py                | Python           |         12 |          1 |          6 |         19 |
+| /Users/vodoanminhhieuvn/iCloud Drive (Archive)/Desktop/C_Garage/garage/migrations/0008_auto_20200707_1044.py                | Python           |         12 |          1 |          6 |         19 |
+| /Users/vodoanminhhieuvn/iCloud Drive (Archive)/Desktop/C_Garage/garage/migrations/0009_auto_20200708_0628.py                | Python           |         13 |          1 |          6 |         20 |
+| /Users/vodoanminhhieuvn/iCloud Drive (Archive)/Desktop/C_Garage/garage/migrations/0010_auto_20200708_0723.py                | Python           |         12 |          1 |          6 |         19 |
+| /Users/vodoanminhhieuvn/iCloud Drive (Archive)/Desktop/C_Garage/garage/migrations/0011_auto_20200708_1338.py                | Python           |         12 |          1 |          6 |         19 |
+| /Users/vodoanminhhieuvn/iCloud Drive (Archive)/Desktop/C_Garage/garage/migrations/0012_auto_20200708_1425.py                | Python           |         12 |          1 |          6 |         19 |
+| /Users/vodoanminhhieuvn/iCloud Drive (Archive)/Desktop/C_Garage/garage/migrations/0013_auto_20200708_1429.py                | Python           |         12 |          1 |          6 |         19 |
+| /Users/vodoanminhhieuvn/iCloud Drive (Archive)/Desktop/C_Garage/garage/migrations/0014_auto_20200708_1444.py                | Python           |         12 |          1 |          6 |         19 |
+| /Users/vodoanminhhieuvn/iCloud Drive (Archive)/Desktop/C_Garage/garage/migrations/0015_auto_20200708_1450.py                | Python           |         12 |          1 |          6 |         19 |
+| /Users/vodoanminhhieuvn/iCloud Drive (Archive)/Desktop/C_Garage/garage/migrations/0016_auto_20200708_1524.py                | Python           |         12 |          1 |          6 |         19 |
+| /Users/vodoanminhhieuvn/iCloud Drive (Archive)/Desktop/C_Garage/garage/migrations/0017_auto_20200708_1526.py                | Python           |         12 |          1 |          6 |         19 |
+| /Users/vodoanminhhieuvn/iCloud Drive (Archive)/Desktop/C_Garage/garage/migrations/0018_auto_20200708_1532.py                | Python           |         12 |          1 |          6 |         19 |
+| /Users/vodoanminhhieuvn/iCloud Drive (Archive)/Desktop/C_Garage/garage/migrations/0019_auto_20200708_1536.py                | Python           |         12 |          1 |          6 |         19 |
+| /Users/vodoanminhhieuvn/iCloud Drive (Archive)/Desktop/C_Garage/garage/migrations/0020_historicalcar.py                     | Python           |         39 |          1 |          6 |         46 |
+| /Users/vodoanminhhieuvn/iCloud Drive (Archive)/Desktop/C_Garage/garage/migrations/0021_delete_historicalcar.py              | Python           |         10 |          1 |          6 |         17 |
+| /Users/vodoanminhhieuvn/iCloud Drive (Archive)/Desktop/C_Garage/garage/migrations/0022_historicalcar_historicalcar_brand.py | Python           |         57 |          1 |          6 |         64 |
+| /Users/vodoanminhhieuvn/iCloud Drive (Archive)/Desktop/C_Garage/garage/migrations/0023_auto_20200801_1425.py                | Python           |         15 |          1 |          6 |         22 |
+| /Users/vodoanminhhieuvn/iCloud Drive (Archive)/Desktop/C_Garage/garage/migrations/0024_auto_20200801_1427.py                | Python           |         17 |          1 |          6 |         24 |
+| /Users/vodoanminhhieuvn/iCloud Drive (Archive)/Desktop/C_Garage/garage/migrations/0025_car_date_finished.py                 | Python           |         12 |          1 |          6 |         19 |
+| /Users/vodoanminhhieuvn/iCloud Drive (Archive)/Desktop/C_Garage/garage/migrations/0026_car_fee.py                           | Python           |         12 |          1 |          6 |         19 |
+| /Users/vodoanminhhieuvn/iCloud Drive (Archive)/Desktop/C_Garage/garage/migrations/0027_auto_20200802_2122.py                | Python           |         12 |          1 |          6 |         19 |
+| /Users/vodoanminhhieuvn/iCloud Drive (Archive)/Desktop/C_Garage/garage/migrations/__init__.py                               | Python           |          0 |          0 |          1 |          1 |
+| /Users/vodoanminhhieuvn/iCloud Drive (Archive)/Desktop/C_Garage/garage/models.py                                            | Python           |         34 |          1 |          7 |         42 |
+| /Users/vodoanminhhieuvn/iCloud Drive (Archive)/Desktop/C_Garage/garage/signals.py                                           | Python           |         10 |          1 |         10 |         21 |
+| /Users/vodoanminhhieuvn/iCloud Drive (Archive)/Desktop/C_Garage/garage/static/garage/main.css                               | CSS              |         87 |          0 |         23 |        110 |
+| /Users/vodoanminhhieuvn/iCloud Drive (Archive)/Desktop/C_Garage/garage/templates/garage/about.html                          | HTML             |          4 |          0 |          0 |          4 |
+| /Users/vodoanminhhieuvn/iCloud Drive (Archive)/Desktop/C_Garage/garage/templates/garage/base.html                           | HTML             |         72 |          1 |         10 |         83 |
+| /Users/vodoanminhhieuvn/iCloud Drive (Archive)/Desktop/C_Garage/garage/templates/garage/car_confirm_delete.html             | HTML             |         19 |          0 |          1 |         20 |
+| /Users/vodoanminhhieuvn/iCloud Drive (Archive)/Desktop/C_Garage/garage/templates/garage/car_detail.html                     | HTML             |         22 |          0 |          5 |         27 |
+| /Users/vodoanminhhieuvn/iCloud Drive (Archive)/Desktop/C_Garage/garage/templates/garage/car_form.html                       | HTML             |         18 |          0 |          1 |         19 |
+| /Users/vodoanminhhieuvn/iCloud Drive (Archive)/Desktop/C_Garage/garage/templates/garage/home.html                           | HTML             |         51 |          0 |         16 |         67 |
+| /Users/vodoanminhhieuvn/iCloud Drive (Archive)/Desktop/C_Garage/garage/templates/garage/user_home.html                      | HTML             |         46 |          0 |         13 |         59 |
+| /Users/vodoanminhhieuvn/iCloud Drive (Archive)/Desktop/C_Garage/garage/tests.py                                             | Python           |          1 |          1 |          2 |          4 |
+| /Users/vodoanminhhieuvn/iCloud Drive (Archive)/Desktop/C_Garage/garage/urls.py                                              | Python           |         12 |          0 |          1 |         13 |
+| /Users/vodoanminhhieuvn/iCloud Drive (Archive)/Desktop/C_Garage/garage/views.py                                             | Python           |         59 |          1 |         16 |         76 |
+| /Users/vodoanminhhieuvn/iCloud Drive (Archive)/Desktop/C_Garage/garage_record/__init__.py                                   | Python           |          0 |          0 |          1 |          1 |
+| /Users/vodoanminhhieuvn/iCloud Drive (Archive)/Desktop/C_Garage/garage_record/admin.py                                      | Python           |          1 |          1 |          2 |          4 |
+| /Users/vodoanminhhieuvn/iCloud Drive (Archive)/Desktop/C_Garage/garage_record/apps.py                                       | Python           |          3 |          0 |          3 |          6 |
+| /Users/vodoanminhhieuvn/iCloud Drive (Archive)/Desktop/C_Garage/garage_record/migrations/__init__.py                        | Python           |          0 |          0 |          1 |          1 |
+| /Users/vodoanminhhieuvn/iCloud Drive (Archive)/Desktop/C_Garage/garage_record/models.py                                     | Python           |          1 |          1 |          2 |          4 |
+| /Users/vodoanminhhieuvn/iCloud Drive (Archive)/Desktop/C_Garage/garage_record/tests.py                                      | Python           |          1 |          1 |          2 |          4 |
+| /Users/vodoanminhhieuvn/iCloud Drive (Archive)/Desktop/C_Garage/garage_record/views.py                                      | Python           |          1 |          1 |          2 |          4 |
+| /Users/vodoanminhhieuvn/iCloud Drive (Archive)/Desktop/C_Garage/manage.py                                                   | Python           |         15 |          2 |          5 |         22 |
+| /Users/vodoanminhhieuvn/iCloud Drive (Archive)/Desktop/C_Garage/requirements.txt                                            | pip requirements |         16 |          0 |          1 |         17 |
+| /Users/vodoanminhhieuvn/iCloud Drive (Archive)/Desktop/C_Garage/users/__init__.py                                           | Python           |          0 |          0 |          1 |          1 |
+| /Users/vodoanminhhieuvn/iCloud Drive (Archive)/Desktop/C_Garage/users/admin.py                                              | Python           |          5 |          1 |          4 |         10 |
+| /Users/vodoanminhhieuvn/iCloud Drive (Archive)/Desktop/C_Garage/users/apps.py                                               | Python           |          5 |          1 |          5 |         11 |
+| /Users/vodoanminhhieuvn/iCloud Drive (Archive)/Desktop/C_Garage/users/forms.py                                              | Python           |         20 |          1 |          6 |         27 |
+| /Users/vodoanminhhieuvn/iCloud Drive (Archive)/Desktop/C_Garage/users/migrations/0001_initial.py                            | Python           |         18 |          1 |          7 |         26 |
+| /Users/vodoanminhhieuvn/iCloud Drive (Archive)/Desktop/C_Garage/users/migrations/0002_auto_20200627_0417.py                 | Python           |         13 |          1 |          6 |         20 |
+| /Users/vodoanminhhieuvn/iCloud Drive (Archive)/Desktop/C_Garage/users/migrations/0003_auto_20200703_0321.py                 | Python           |         18 |          1 |          6 |         25 |
+| /Users/vodoanminhhieuvn/iCloud Drive (Archive)/Desktop/C_Garage/users/migrations/0004_userprofileadditional_image.py        | Python           |         12 |          1 |          6 |         19 |
+| /Users/vodoanminhhieuvn/iCloud Drive (Archive)/Desktop/C_Garage/users/migrations/__init__.py                                | Python           |          0 |          0 |          1 |          1 |
+| /Users/vodoanminhhieuvn/iCloud Drive (Archive)/Desktop/C_Garage/users/models.py                                             | Python           |         22 |          2 |          9 |         33 |
+| /Users/vodoanminhhieuvn/iCloud Drive (Archive)/Desktop/C_Garage/users/signals.py                                            | Python           |         11 |          1 |          9 |         21 |
+| /Users/vodoanminhhieuvn/iCloud Drive (Archive)/Desktop/C_Garage/users/static/users/main.js                                  | JavaScript       |          0 |          0 |          1 |          1 |
+| /Users/vodoanminhhieuvn/iCloud Drive (Archive)/Desktop/C_Garage/users/templates/users/change_pwd.html                       | HTML             |         22 |          4 |          2 |         28 |
+| /Users/vodoanminhhieuvn/iCloud Drive (Archive)/Desktop/C_Garage/users/templates/users/login.html                            | HTML             |         76 |          1 |         17 |         94 |
+| /Users/vodoanminhhieuvn/iCloud Drive (Archive)/Desktop/C_Garage/users/templates/users/logout.html                           | HTML             |         12 |          0 |          1 |         13 |
+| /Users/vodoanminhhieuvn/iCloud Drive (Archive)/Desktop/C_Garage/users/templates/users/profile.html                          | HTML             |         22 |          4 |          2 |         28 |
+| /Users/vodoanminhhieuvn/iCloud Drive (Archive)/Desktop/C_Garage/users/templates/users/register.html                         | HTML             |         18 |          0 |          1 |         19 |
+| /Users/vodoanminhhieuvn/iCloud Drive (Archive)/Desktop/C_Garage/users/tests.py                                              | Python           |          1 |          1 |          2 |          4 |
+| /Users/vodoanminhhieuvn/iCloud Drive (Archive)/Desktop/C_Garage/users/views.py                                              | Python           |         40 |         11 |         12 |         63 |
+| Total                                                                                                                       |                  |      1,714 |        112 |        486 |      2,312 |
++-----------------------------------------------------------------------------------------------------------------------------+------------------+------------+------------+------------+------------+

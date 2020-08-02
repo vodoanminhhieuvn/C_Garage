@@ -24,11 +24,17 @@ class Car(models.Model):
     date_finished = models.DateTimeField(null=True)
     staff = models.ForeignKey(User, on_delete=models.CASCADE)
     car_brand = models.ForeignKey('Car_brand', on_delete=models.CASCADE)
+    fee = models.IntegerField(null=True)
     is_edited = models.BooleanField(default=False, null=True)
     status = models.BooleanField(default=True, null=True)
 
+    def save(self, *args, **kwargs):
+        if not self.car_id:
+            self.car_id = self.car_brand.car_code + self.phone_number
+        super(Car, self).save(*args, **kwargs)
+
     def __str__(self):
-        return self.owner
+        return self.car_id
     
     def get_absolute_url(self):
         return reverse('garage-home')

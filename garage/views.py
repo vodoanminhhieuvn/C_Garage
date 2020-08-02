@@ -1,7 +1,9 @@
 from django import forms
-from django.shortcuts import render, redirect
-from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from .models import Car, Car_Brand
+from .forms import CarUpdateForm
+from django.contrib.auth.models import User
+from django.shortcuts import render, redirect, get_object_or_404
+from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 
 
@@ -18,21 +20,34 @@ class CarListView(ListView):
     template_name = 'garage/home.html' # <app>/<model>_<viewtype>.html
     context_object_name = 'my_list'
     ordering = ['-date_received']
+    paginate_by = 6
+
+class UserCarListView(ListView):
+    model = Car
+    template_name = 'garage/user_home.html' # <app>/<model>_<viewtype>.html
+    context_object_name = 'my_list'
+    paginate_by = 6
+
+    def get_queryset(self):
+        user = get_object_or_404(User, username=self.kwargs.get('username'))
+        return Car.objects.filter(staff=user).order_by('-date_received')
 
 class CarDetailView(DetailView):
     model = Car
 
 class CarCreateView(LoginRequiredMixin, CreateView):
     model = Car
-    fields = ['car_id', 'owner', 'address', 'license_plate', 'phone_number', 'email', 'car_brand']
+    fields = ['owner', 'address', 'license_plate', 'phone_number', 'email', 'car_brand', 'fee']
 
     def form_valid(self, form):
         form.instance.staff = self.request.user
         return super().form_valid(form)
 
+
 class CarUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     model = Car
-    fields = ['owner', 'address', 'license_plate', 'phone_number', 'email', 'car_brand']
+    is_edited = forms.BooleanField(disabled=True)
+    form_class = CarUpdateForm
     def form_valid(self, form):
         form.instance.staff = self.request.user
         return super().form_valid(form)
@@ -42,6 +57,10 @@ class CarUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
         if self.request.user.is_superuser:
             return True
         return False
+    
+    def get_initial(self):
+        return {'is_edited': True}
+
 
 class CarDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
     model = Car
