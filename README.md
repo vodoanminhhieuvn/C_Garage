@@ -21,8 +21,10 @@ pip3 install -r requirements.txt
 - [x] Create Managing Car
 - [x] Support Mobile Web
 - [x] Fix Model Car Status
-- [ ] Update HTMl
-- [ ] Create HistoricalRecord
-- [ ] Create Pagination
-
+- [x] Update HTMl
+- [x] Create Pagination
+- [ ] Create Track Users actions
+- [ ] Create Detail Car
+- [ ] Create Record Table
+ 
 > :warning: **This is still under development**
