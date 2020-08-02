@@ -14,7 +14,6 @@ pip3 install -r requirements.txt
  - Django 3.0.6
  - Python 3
 
-pip3 install -r requirements.txt
 
 # To-do List
 - [x] Create Log-in System
