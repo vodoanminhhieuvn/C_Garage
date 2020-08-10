@@ -1,21 +1,21 @@
 # Summary
 
-Date : 2020-08-02 21:56:19
+Date : 2020-08-10 21:49:42
 
 Directory /Users/vodoanminhhieuvn/iCloud Drive (Archive)/Desktop/C_Garage
 
-Total : 83 files,  1714 codes, 112 comments, 486 blanks, all 2312 lines
+Total : 90 files,  2054 codes, 120 comments, 588 blanks, all 2762 lines
 
 [details](details.md)
 
 ## Languages
 | language | files | code | comment | blank | total |
 | :--- | ---: | ---: | ---: | ---: | ---: |
-| Python | 63 | 850 | 102 | 354 | 1,306 |
-| HTML | 13 | 388 | 10 | 72 | 470 |
-| Database | 1 | 307 | 0 | 8 | 315 |
+| Python | 68 | 1,062 | 111 | 423 | 1,596 |
+| HTML | 15 | 501 | 9 | 109 | 619 |
+| Database | 1 | 320 | 0 | 4 | 324 |
 | CSS | 1 | 87 | 0 | 23 | 110 |
-| Markdown | 2 | 40 | 0 | 22 | 62 |
+| Markdown | 2 | 42 | 0 | 22 | 64 |
 | YAML | 1 | 26 | 0 | 5 | 31 |
 | pip requirements | 1 | 16 | 0 | 1 | 17 |
 | JavaScript | 1 | 0 | 0 | 1 | 1 |
@@ -23,25 +23,24 @@ Total : 83 files,  1714 codes, 112 comments, 486 blanks, all 2312 lines
 ## Directories
 | path | files | code | comment | blank | total |
 | :--- | ---: | ---: | ---: | ---: | ---: |
-| . | 83 | 1,714 | 112 | 486 | 2,312 |
+| . | 90 | 2,054 | 120 | 588 | 2,762 |
 | .github | 1 | 26 | 0 | 5 | 31 |
 | .github/workflows | 1 | 26 | 0 | 5 | 31 |
 | C_Garage | 6 | 111 | 41 | 55 | 207 |
 | C_Garage/templates | 1 | 6 | 0 | 3 | 9 |
 | C_Garage/templates/admin | 1 | 6 | 0 | 3 | 9 |
-| garage | 45 | 877 | 34 | 279 | 1,190 |
-| garage/migrations | 28 | 425 | 27 | 164 | 616 |
+| garage | 59 | 1,208 | 47 | 398 | 1,653 |
+| garage/migrations | 39 | 585 | 38 | 230 | 853 |
 | garage/static | 1 | 87 | 0 | 23 | 110 |
 | garage/static/garage | 1 | 87 | 0 | 23 | 110 |
-| garage/templates | 7 | 232 | 1 | 46 | 279 |
-| garage/templates/garage | 7 | 232 | 1 | 46 | 279 |
-| garage_record | 7 | 7 | 4 | 13 | 24 |
-| garage_record/migrations | 1 | 0 | 0 | 1 | 1 |
-| users | 19 | 315 | 31 | 98 | 444 |
+| garage/templates | 9 | 343 | 1 | 83 | 427 |
+| garage/templates/garage | 9 | 343 | 1 | 83 | 427 |
+| garage/templatetags | 1 | 11 | 0 | 2 | 13 |
+| users | 19 | 316 | 30 | 98 | 444 |
 | users/migrations | 5 | 61 | 4 | 26 | 91 |
 | users/static | 1 | 0 | 0 | 1 | 1 |
 | users/static/users | 1 | 0 | 0 | 1 | 1 |
-| users/templates | 5 | 150 | 9 | 23 | 182 |
-| users/templates/users | 5 | 150 | 9 | 23 | 182 |
+| users/templates | 5 | 152 | 8 | 23 | 183 |
+| users/templates/users | 5 | 152 | 8 | 23 | 183 |
 
 [details](details.md)

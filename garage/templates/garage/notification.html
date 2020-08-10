@@ -1,50 +1,35 @@
 
 {% extends "garage/base.html"%}
-{% load group_tags %}
 {% block content %}
 
-    <div class="mb-2 clearfix">
-      <a href="{% url 'car-create' %}" class="btn btn-success float-right">New Car</a>
-    </div>
-
-    {% for car in my_list %}
+    {% for car_history in my_HistoryTrackingCar %}
     <article class="media content-section">
         <div class="media-body">
           <div class="article-metadata">
-            <small class="text-muted">{{ car.date_received|date:"j/n/Y" }}</small>
+            <a class="mr-2" href="#">{{ car_history.user }}</a>
+            <small class="text-muted">{{ car_history.action_date|date:"j/n/Y" }}</small>
           </div>
-
           <div class="container">
             <div class="row">
 
               <div class="col-sm">
-                <h2 class="article-title">{{ car.car_brand.car_name }}</h2>
-                <h5 class="article-title">Fee: {{ car.fee }}</h5>
+                <a class="article-title" href="{% url 'car-detail' car_history.car_id %}">
+                  {{car_history.car_id}}
+                </a>
               </div>
-    
-              <div class="col-sm-5">
-                <ul>
-                  <li>Owner: {{ car.owner }}</li>
-                  <li>Phone: {{ car.phone_number }}</li>
-                  <li>license_plate: {{ car.license_plate}}</li>
-                </ul>
-              </div> 
 
-              <div class="col-sm mt-3">
-                {% if user|has_group:"Technical Team" %}
-                  <a class="article-title btn btn-info"  href="{% url 'repairvote-detail' car.repairvote.id %}" style="color:white">Detail</a>
-                {% elif user.is_authenticated %}
-                  <a class="article-title btn btn-info"  href="{% url 'car-detail' car.pk %}" style="color:white">Detail</a>
+              <div class="col-sm ml-3">
+                {% if car_history.action == 'AD' %}
+                  <i class="fas fa-plus-circle fa-1x"></i>
                 {% endif %}
               </div>
-
+              
             </div>
           </div>
-
         </div>
       </article>
     {% endfor%}
-
+      
     {% if is_paginated %}
 
       {% if page_obj.has_previous %}
@@ -67,5 +52,4 @@
 
     {% endif %}
 {% endblock content %}
-
 

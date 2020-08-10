@@ -1,16 +1,17 @@
-from django import forms
-from .models import Car, Car_Brand
-from .forms import CarUpdateForm
-from django.contrib.auth.models import User
-from django.shortcuts import render, redirect, get_object_or_404
-from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
+#Base django
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
+from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
+from django.shortcuts import render, redirect, get_object_or_404
+from django.contrib.auth.models import User
+from django import forms
+#Import Class
+from .models import Car, Car_Brand, HistoryTrackingCar, Accessories, RepairVote
+from .forms import CarUpdateForm
 
 
 def home(request):
-    my_list = Car.objects.all()
     context = {
-        'my_list': my_list
+        'my_list': Car.objects.all()
     }
     return render(request, 'garage/home.html', context)
 
@@ -34,6 +35,7 @@ class UserCarListView(ListView):
 
 class CarDetailView(DetailView):
     model = Car
+    
 
 class CarCreateView(LoginRequiredMixin, CreateView):
     model = Car
@@ -42,7 +44,6 @@ class CarCreateView(LoginRequiredMixin, CreateView):
     def form_valid(self, form):
         form.instance.staff = self.request.user
         return super().form_valid(form)
-
 
 class CarUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     model = Car
@@ -57,7 +58,7 @@ class CarUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
         if self.request.user.is_superuser:
             return True
         return False
-    
+    # Initialize default value
     def get_initial(self):
         return {'is_edited': True}
 
@@ -72,5 +73,27 @@ class CarDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
             return True
         return False
 
+class RepairVoteDetailView(DetailView):
+    model = RepairVote
+    template_name = 'garage/repairVote_detail.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(RepairVoteDetailView, self).get_context_data(**kwargs)
+        context['Accessories'] = Accessories.objects.all()
+        return context
+
 def about(request):
     return render(request, 'garage/about.html')
+
+def history_home(request):
+    context = {
+        'my_list': HistoryTrackingCar.objects.all()
+    }
+    return (request, 'garage/notification.html', context)
+
+class HistoryTrackingCarListView(ListView):
+    model = HistoryTrackingCar
+    template_name = 'garage/notification.html' # <app>/<model>_<viewtype>.html
+    context_object_name = 'my_HistoryTrackingCar'
+    paginate_by = 6
+    ordering = ['-action_date']

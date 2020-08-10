@@ -6,20 +6,46 @@
             <strong>Warning!</strong> This Car has been edited
         </div>
     {% endif %}
-<article class="media content-section">
-    <div class="media-body">
-        <div class="article-metadata">
-        <a class="mr-2" href="{% url 'user-cars' car.staff.username %}">{{ object.staff }}</a>
-        <small class="text-muted">{{ object.date_received|date:"j/n/Y" }}</small>
+    <article class="media content-section">
+        <div class="media-body">
+            <article class="media content-section">
+                <div class="media-body">
+                <div class="article-metadata">
+                    <a class="mr-2" href="{% url 'user-cars' car.staff.username %}">{{ object.staff }}</a>
+                    <small class="text-muted">{{ object.date_received|date:"j/n/Y" }}</small>
+                </div>
+        
+                <div class="container">
+                    <div class="row">
+        
+                    <div class="col-sm">
+                        <h2 class="article-title">{{ object.car_brand.car_name }}</h2>
+                        <h5 class="article-title">Fee: {{ object.fee }}</h5>
+                    </div>
+            
+                    <div class="col-sm">
+                        <ul>
+                        <li>Owner: {{ object.owner }}</li>
+                        <li>Phone: {{ object.phone_number }}</li>
+                        <li>license_plate: {{ object.license_plate}}</li>
+                        </ul>
+                    </div>
+        
+                    </div>
+                </div>
+        
+                </div>
+            </article>
+
+            {% if user.is_superuser %}
+                <a href="{% url 'car-delete' object.car_id %}" class="btn btn-danger btn-sm mt-1 mb-1 float-right">Delete</a>
+                <a href="{% url 'car-update' object.car_id %}" class="btn btn-secondary btn-sm mt-1 mb-1 mr-1 float-right">Update</a>
+            {% endif %}
+
         </div>
-        <h2 class="article-title">{{ object.owner }}</h2>
-        <p class="article-content">{{ object.car_code.car_name }}</p>
-        {% if user.is_superuser %}
-            <a href="{% url 'car-delete' object.car_id %}" class="btn btn-danger btn-sm mt-1 mb-1 float-right">Delete</a>
-            <a href="{% url 'car-update' object.car_id %}" class="btn btn-secondary btn-sm mt-1 mb-1 mr-1 float-right">Update</a>
-        {% endif %}
-    </div>
     </article>
+
+    
 {% endblock content %}
 
 
