@@ -23,8 +23,10 @@ pip3 install -r requirements.txt
 - [x] Fix Model Car Status
 - [x] Update HTMl
 - [x] Create Pagination
+- [X] Create Detail Car
+- [X] Group Function
 - [ ] Create Track Users actions
-- [ ] Create Detail Car
 - [ ] Create Record Table
+- [ ] Create Adding Accessories
  
 > :warning: **This is still under development**
