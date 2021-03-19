@@ -9,7 +9,7 @@ django-datetimepicker==3.14
 django-phone-field==1.8.1
 django-readonly-field==1.0.5
 django-resized==0.3.11
-Pillow==7.1.2
+Pillow==8.1.1
 pytz==2020.1
 soupsieve==2.0.1
 sqlparse==0.3.1
